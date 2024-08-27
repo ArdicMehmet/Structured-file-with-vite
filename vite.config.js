@@ -6,6 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/Structured-file-with-vite/', // Uygulamanızın barındırılacağı alt dizin
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
